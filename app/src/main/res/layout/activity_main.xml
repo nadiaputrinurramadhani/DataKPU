@@ -30,12 +30,22 @@
     <ListView
         android:id="@+id/awal"
         android:layout_width="fill_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_below="@id/til"
         android:layout_marginTop="10dp"/>
+
+     <TextView
+        android:text="Isi Record :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/awal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView123" />
+
     <ListView
-        android:layout_below="@id/awal"
+        android:layout_below="@id/textView123"
         android:id="@+id/list"
+        android:layout_marginTop="5dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
@@ -46,6 +56,8 @@
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        tools:textColor="@android:color/background_light" />
 
 </RelativeLayout>
